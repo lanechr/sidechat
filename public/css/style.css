@@ -1,0 +1,244 @@
+h2 {
+    display: inline;
+}
+
+.commentlink {
+    color: #33CBBA;
+}
+
+.discussionposter {
+    color: #33CBBA;
+}
+
+.headerlinks {
+    color: #33CBBA;
+}
+
+.discussionsrc {
+    color: #1C7168
+}
+
+.wrap{
+    visibility: hidden;
+}
+.bar {
+    background: #42A5F5;
+    width: 0;
+    height: 30px;
+    top: 0;
+    position: relative;
+    clear: both;
+    margin-bottom: 5px;
+ }
+
+
+.bar:nth-of-type(2n) {
+    background: #64B5F6;
+}
+
+.bar span{
+    color: #004D40;
+
+}
+
+.verticalLine {
+    text-align: center;
+    width: 1px;
+    height: 25px;
+    display: inline-block;
+    color: #9E9E9E;
+    border-left: 1px solid #9E9E9E;
+
+    position: relative;
+    top: 10px;
+}
+
+.verticalLine:nth-of-type(5n) {
+    border-right: 1px solid #9E9E9E;
+}
+
+.mini-nav{
+    height: 20px !important;
+    padding: 0px;
+    width: 100%;
+    background: white;
+}
+
+.navbar{
+    background: #009688;
+}
+
+.navbar-header .navbar-brand{
+    color: white;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text{
+    background: #009688;
+    color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    background: #009688;
+    color: white;
+}
+
+.navbar-nav>.open>a:hover{
+    background: #009688;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+}
+
+.discussion-row{
+    padding-bottom: 30px;
+}
+
+
+/*Guage Chart CSS*/
+
+
+.metric {
+    padding: 10%;
+
+}
+
+/*Centres gauge on small screen*/
+@media (max-width: 991px) {
+    .discussion-row .text-right { text-align:center }
+}
+
+.metric svg {
+    max-width: 200px;
+}
+
+
+.metric path {
+    stroke-width: 75;
+    stroke: #ecf0f1;
+    fill: none;
+}
+
+.metric.perfect path {
+    stroke-width: 75;
+    stroke: #33CBBA;
+    fill: none;
+}
+
+.metric text {
+    font-family: "asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.metric.bigswing path.data-arc {
+    stroke: #EB0011;
+}
+
+.metric.bigswing text {
+    fill: #EB0011;
+}
+
+.metric.swing path.data-arc {
+    stroke: #F19D00;
+}
+
+.metric.swing text {
+    fill: #F19D00;
+}
+
+.metric.neutral path.data-arc {
+    stroke: #33CBBA;
+}
+
+.metric.neutral text {
+    fill: #33CBBA;
+}
+.metric.perfect path.data-arc {
+    stroke: #33CBBA;
+}
+
+.metric.perfect text {
+    fill: #33CBBA;
+}
+
+/*Code for vote breakdown*/
+
+.chartholder {
+    position: relative;
+    height: 117px;
+    max-height: 100%;
+}
+
+.votebreakdownholder{
+    position: relative;
+    height: 117px;
+    max-height: 100%;
+}
+
+.chart {
+    position: relative;
+    height: 425px;
+    margin: 0 auto emCalc(-32px);
+    clear: both;
+    padding: 0;
+    width: 100%;
+    transform: scaleY(0.5);
+    top: -180px;
+}
+
+.chart li {
+    display: inline-block;
+    height: 425px;
+    margin: 0 1.8% 0 0;
+    width: 15%;
+    top: 150px;
+    padding: emCalc(25px) 0;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.chart .axis {
+    display: inline-block;
+    top: emCalc(-45px);
+    width: 8%;
+}
+
+.chart .label {
+    background: #cccccc;
+    margin: -9px 0 71px 0;
+}
+
+.chart .percent {
+    letter-spacing: -3px;
+    opacity: .4;
+    width: 100%;
+    position: absolute;
+    top:-40px;
+    font-size: 2em;
+}
+
+.chart .percent span {
+    font-size: 30px;
+    font-size: 1.5rem;
+}
+
+.chart .balancemet {
+    font-weight: 800;
+    opacity: .5;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.chart .bar{
+    background: #5BCBBF;
+}
+
+
